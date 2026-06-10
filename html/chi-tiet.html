@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Thú Cưng</title>
+    <link rel="stylesheet" href="../css/chi-tiet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+    <a href="#" id="backBtn" class="back-home">← Quay lại cửa hàng</a>
+
+    <section class="detail-page">
+        <div id="detail"></div>
+    </section>
+
+    <div class="mobile-action">
+        <button class="mobile-call">📞 Liên hệ : 000 000 000 </button>
+        <button class="mobile-book">Đặt mua</button>
+    </div>
+
+    <script src="../js/script.js"></script>
+
+    <script>
+        const params  = new URLSearchParams(window.location.search);
+        const from    = params.get('from');
+        const backBtn = document.getElementById('backBtn');
+
+        if (from === 'index') {
+            backBtn.href = '../index.html';
+        } else {
+            backBtn.href = 'san-pham.html';
+        }
+    </script>
+
+</body>
+</html>

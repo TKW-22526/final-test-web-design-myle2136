@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Mục Thú Cưng</title>
+    <link rel="stylesheet" href="../css/san-pham.css">
+</head>
+<body>
+
+<!-- HEADER MINI -->
+<div class="header-mini">
+
+    <div class="header-left">
+        <a href="../index.html">🏠 Trang chủ</a>
+        <a href="gio-hang.html" class="cart">
+            <span class="cart-icon">🛒</span>
+            <span class="cart-count">0</span>
+        </a>
+    </div>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Tìm kiếm thú cưng..."
+        class="search-box"
+    >
+
+</div>
+
+<!-- SECTION -->
+<section class="pets">
+
+    <!-- TOP -->
+    <div class="top-bar">
+        <div class="title-box">
+            <h2>Danh Mục Thú Cưng</h2>
+            <p>Những bé cưng thuần chủng, đáng yêu nhất</p>
+        </div>
+        <div class="result-box">
+            <i class="fa-solid fa-paw"></i>
+            <span>20+ giống thú cưng</span>
+        </div>
+    </div>
+
+    <!-- ADMIN TOGGLE -->
+    <button class="admin-toggle-btn" onclick="toggleAdmin()">
+        ➕ Thêm Thú Cưng Mới
+    </button>
+
+    <!-- ADMIN PANEL -->
+    <div class="admin-panel" id="admin-panel">
+        <h3>➕ Thêm Thú Cưng Mới</h3>
+        <form id="add-product-form">
+            <label><b>Tên thú cưng:</b></label>
+            <input type="text" id="p-name" required placeholder="Ví dụ: Chó Poodle Tiny">
+
+            <label><b>Giá bán (VNĐ):</b></label>
+            <input type="number" id="p-price" required placeholder="Ví dụ: 5000000">
+
+            <label><b>Phân loại:</b></label>
+            <select id="p-category">
+                <option value="dog">Chó</option>
+                <option value="cat">Mèo</option>
+            </select>
+
+            <label><b>Link hình ảnh:</b></label>
+            <input type="url" id="p-image" required placeholder="Dán link ảnh từ internet...">
+
+            <button type="submit" class="btn-submit">Thêm Vào Cửa Hàng</button>
+        </form>
+    </div>
+
+    <!-- FILTER -->
+    <div class="menu-filter">
+        <button class="filter-btn active" onclick="filterPet('all', this)">Tất Cả</button>
+        <button class="filter-btn" onclick="filterPet('dog', this)">🐶 Chó</button>
+        <button class="filter-btn" onclick="filterPet('cat', this)">🐱 Mèo</button>
+    </div>
+
+    <!-- PET LIST -->
+    <div id="pet-container" class="pet-container"></div>
+
+    <!-- SERVICE -->
+    <div class="service-box">
+
+        <div class="service-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Giao Tận Nơi</h3>
+            <p>Giao hàng nhanh trong ngày</p>
+        </div>
+
+        <div class="service-item">
+            <i class="fa-solid fa-shield-heart"></i>
+            <h3>Bảo Hành Sức Khoẻ</h3>
+            <p>Cam kết 30 ngày sau mua</p>
+        </div>
+
+        <div class="service-item">
+            <i class="fa-solid fa-syringe"></i>
+            <h3>Đã Tiêm Phòng</h3>
+            <p>Đầy đủ giấy tờ, sổ sức khoẻ</p>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

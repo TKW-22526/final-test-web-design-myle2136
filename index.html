@@ -1,4 +1,154 @@
 <!DOCTYPE html>
-<html>
-<body>hehe</body>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Thú Cưng Siêu Cấp Đáng Yêu</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header class="header">
+
+    <div class="logo">
+        <span class="logo-icon">🐾</span>
+        <h2>PetShop</h2>
+    </div>
+
+    <nav class="menu">
+        <a href="index.html">Trang Chủ</a>
+        <a href="html/san-pham.html">Danh Mục</a>
+        <a href="html/gioi-thieu.html">Giới Thiệu</a>
+        <a href="html/lien-he.html">Liên Hệ</a>
+    </nav>
+
+    <div class="header-right">
+        <a href="html/gio-hang.html" class="cart">
+            <span class="cart-icon">🛒</span>
+            <span class="cart-count">0</span>
+        </a>
+        <a href="html/lien-he.html" class="cta-btn">Đặt Mua</a>
+    </div>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-text">
+        <span class="tag">PetShop - Thú Cưng Siêu Cấp Đáng Yêu</span>
+        <h1>Người Bạn Đồng Hành Đáng Yêu Nhất</h1>
+        <p>Chó, mèo thuần chủng chất lượng cao - chăm sóc tận tâm cho gia đình bạn.</p>
+        <div class="hero-btn">
+            <a href="html/san-pham.html">Xem Danh Mục</a>
+            <a href="html/gioi-thieu.html" class="outline">Tìm Hiểu Thêm</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="category">
+    <h2>Danh Mục Thú Cưng</h2>
+    <div class="category-list">
+        <div class="category-item">🐶 Chó</div>
+        <div class="category-item">🐱 Mèo</div>      
+    </div>
+</section>
+
+<section class="feature">
+
+    <div class="feature-item">
+        <i class="fa-solid fa-shield-heart"></i>
+        <h3>Thú Cưng Khỏe Mạnh</h3>
+    </div>
+
+    <div class="feature-item">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h3>Giao Tận Nơi</h3>
+    </div>
+
+    <div class="feature-item">
+        <i class="fa-solid fa-syringe"></i>
+        <h3>Đã Tiêm Phòng</h3>
+    </div>
+
+    <div class="feature-item">
+        <i class="fa-solid fa-heart"></i>
+        <h3>Bảo Hành Sức Khoẻ</h3>
+    </div>
+
+</section>
+
+<section class="products">
+
+    <div class="section-title">
+        <span>Nổi Bật</span>
+        <h2>Thú Cưng Được Yêu Thích</h2>
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="assets/images/ChoGolden.jpg" alt="Chó Golden">
+            <div class="product-info">
+                <h3>Chó Golden Retriever</h3>
+                <p class="price">15.000.000đ</p>
+                <button onclick="addToCart(1,'Chó Golden Retriever',15000000,'../assets/images/ChoGolden.jpg')">
+                    Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/MeoAnh.jpg" alt="Mèo Anh">
+            <div class="product-info">
+                <h3>Mèo Anh Lông Ngắn</h3>
+                <p class="price">8.500.000đ</p>
+                <button onclick="addToCart(2,'Mèo Anh Lông Ngắn',8500000,'assets/images/MeoAnh.jpg')">
+                    Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/ChoCorgi.jpg" alt="Chó Corgi">
+            <div class="product-info">
+                <h3>Chó Corgi Chân Ngắn</h3>
+                <p class="price">18.000.000đ</p>
+                <button onclick="addToCart(3,'Chó Corgi Chân Ngắn',18000000,'assets/images/ChoCorgi.jpg')">
+                    Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about">
+
+    <div class="about-text">
+        <h2>Không Chỉ Là Thú Cưng</h2>
+        <p>PetShop mang đến những người bạn đồng hành thuần chủng, khoẻ mạnh, đã tiêm phòng đầy đủ – giúp gia đình bạn thêm niềm vui mỗi ngày.</p>
+        <a href="html/gioi-thieu.html">Tìm Hiểu Thêm</a>
+    </div>
+
+</section>
+
+<section class="cta">
+    <h2>Nhận Ngay Người Bạn Mới Hôm Nay</h2>
+    <p>Giao tận nhà - Sức khoẻ đảm bảo - Hỗ trợ sau mua</p>
+    <a href="html/san-pham.html">Xem Tất Cả</a>
+</section>
+
+<script src="js/cart.js"></script>
+<script src="js/script.js"></script>
+
+<div class="toast" id="toast">
+    <div class="toast-icon">✓</div>
+    <div class="toast-content">
+        <h4>Đã thêm vào giỏ</h4>
+        <p>Sản phẩm đã được thêm thành công</p>
+    </div>
+</div>
+
+</body>
 </html>

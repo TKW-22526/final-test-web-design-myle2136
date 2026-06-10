@@ -7,7 +7,7 @@ const pets = [
         rawPrice: 15000000,
         category: 'dog',
         image: '../assets/images/ChoGolden.jpg',
-        folder: 'golden',
+        folder: 'ChoGolden',
         inStock: true,
         desc: 'Thân thiện, thông minh, trung thành.',
         fullDesc: `🐶 Ý nghĩa: Biểu tượng của lòng trung thành và tình thân.
@@ -24,8 +24,8 @@ const pets = [
         price: '8.500.000đ',
         rawPrice: 8500000,
         category: 'cat',
-        image: '../assets/images/MeoAnh.jpg',
-        folder: 'meo-anh',
+        image: '../assets/images/MeoAnhh.jpg',
+        folder: 'MeoAnh',
         inStock: true,
         desc: 'Điềm tĩnh, sang trọng, ít ồn ào.',
         fullDesc: `🐱 Ý nghĩa: Người bạn nhỏ lý tưởng, yên tĩnh và dễ thương.
@@ -273,7 +273,7 @@ if (detailContainer) {
                 </div>
                 <div class="thumb-list">
                     ${[1,2,3,4].map(n => `
-                        <img src="../assets/images/${pet.folder}/${n}.jpg" alt="thumb">
+                        <img src="../assets/image/${pet.folder}/${n}.jpg" alt="thumb">
                     `).join('')}
                 </div>
             </div>
